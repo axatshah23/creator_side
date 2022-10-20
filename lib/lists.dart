@@ -1,0 +1,225 @@
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+List<String> imageAddress = [
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rbEeIwHPNMWJQOTHv0C-ybMQa9FdkTfXg&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTGMocOV2MsABX0ZfupHhaGdf2BEEY4YWP0w&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLR5yJCfbyQM6AMi0h4LhwlQc0dvBLm15SQ&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsCmbVU5Gw-T4-_zjJMKF1SxsIHspKNAzzZw&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ84MxJWdUXz8hd3MN6d6iF3nBSI38Qtl4zA&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3UFQEKtQ1yUSBWOt334m82z6XlL7zD7v3Q&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyYasJGcEjVZKwyrps2fUoW-c2vCVgulRTxg&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9FLf4clENBu4VlqCOXimADkAFjh7tUQVbPw&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4R8U0xkr6zLzL8EbSqc_jmL8qEzjur1ySag&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAEEWFBWeXind8TP57B-1chSNtU5V-gZPe9g&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7umrUkQ5BS5fBXK3NtivM_F-fLpW8DJao4g&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAu7EEN_rVlBQhAm8e0ttr76PkqdfsgF1KyA&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2x9leHA_5G9KFQXiysi6ksFag80MhW1cH7A&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyp1lEHAPh6ycgPjS55cJx1MXfUQt-PBYiHQ&usqp=CAU',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZVAUAikxFe09o5zMWuVTuq4psdRI_HvErsg&usqp=CAU',
+];
+
+List<String> name = [
+  'Steve Rogers',
+  'Clint Barton',
+  'Natasha Romanoff',
+  'Tony Stark',
+  'Bruce Banner',
+  'Thor Odinson',
+  'Peter Parker',
+  'Scott Lang',
+  'Carol Denvers',
+  'Wanda Maximoff',
+  'Stephen Strange',
+  'Bucky Barnes',
+  'James Rhodes',
+  'Marc Spector',
+  'Matt Murdock',
+];
+
+List<String> subText = [
+  'Captain America',
+  'Hawkeye',
+  'Black Widow',
+  'Iron Man',
+  'Hulk',
+  'Thor',
+  'Spider-man',
+  'Ant-man',
+  'Captain Marvel',
+  'Scarlet Witch',
+  'Dr. Strange',
+  'Winter Solider',
+  'War-Machine',
+  'Moon Knight',
+  'Daredevil',
+];
+
+List<String> lastMessage = [
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+];
+
+List<String> numberOfNewMessages = [
+  '2',
+  '1',
+  '3',
+  '6',
+  '0',
+  '0',
+  '0',
+  '0',
+  '0',
+  '0',
+  '0',
+  '0',
+  '0',
+  '0',
+  '0',
+];
+
+List<IconData> shortcutIcons = [
+  FontAwesomeIcons.heart,
+  FontAwesomeIcons.userGroup,
+  FontAwesomeIcons.shop,
+  FontAwesomeIcons.bookmark,
+  FontAwesomeIcons.film,
+  FontAwesomeIcons.tv,
+  FontAwesomeIcons.clockRotateLeft,
+  FontAwesomeIcons.flag,
+  FontAwesomeIcons.calendar,
+  FontAwesomeIcons.gamepad,
+  FontAwesomeIcons.faceSmileBeam,
+  FontAwesomeIcons.trophy,
+  FontAwesomeIcons.cloudSunRain,
+  FontAwesomeIcons.newspaper,
+];
+
+List<String> shortcutLabels = [
+  'Dating',
+  'Groups',
+  'Marketplace',
+  'Saved',
+  'Reels',
+  'Videos on watch',
+  'Memories',
+  'Pages',
+  'Events',
+  'Gaming',
+  'Avatars',
+  'Fantasy Games',
+  'Weather',
+  'News',
+];
+
+List<Color?> shortcutColors = [
+  Colors.redAccent,
+  Colors.blueAccent,
+  const Color(0xFF0d47a1),
+  const Color(0xFF673ab7),
+  const Color(0xFFf48fb1),
+  Colors.lightBlueAccent,
+  const Color(0xFF0091ea),
+  const Color(0xFFff7043),
+  const Color(0xFF9ccc65),
+  const Color(0xFF00bcd4),
+  const Color(0xFF7b1fa2),
+  const Color(0xFFfbc02d),
+  const Color(0xFFff9100),
+  Colors.indigoAccent,
+];
+
+List<String> followUpText = [
+  'started following you',
+  'accepted your request',
+  'started following you',
+  'accepted your request',
+  'started following you',
+  'accepted your request',
+  'started following you',
+  'accepted your request',
+  'started following you',
+  'accepted your request',
+  'started following you',
+  'accepted your request',
+  'started following you',
+  'accepted your request',
+  'started following you',
+];
+
+List<String> time = [
+  '56 seconds ago',
+  '2 minutes ago',
+  '7 minutes ago',
+  '30 minutes ago',
+  '2 hours ago',
+  '3 hours ago',
+  '5 hours ago',
+  '8 hours ago',
+  '12 hours ago',
+  '18 hours ago',
+  '1 day ago',
+  '2 days ago',
+  '5 days ago',
+  '8 days ago',
+  '1 month ago',
+];
+
+List<Widget> notificationTabs = [
+  Text('Posts'),
+  Text('Photos'),
+  Text('Friends'),
+];
+
+List<Widget> homeTabs = [
+  Text('Following'),
+  Text('Discover'),
+];
+List<String> location = [
+  'Brooklyn, NY',
+  '',
+  'Russia',
+  '',
+  '',
+  'Brooklyn, NY',
+  '',
+  'Russia',
+  '',
+  '',
+  'Brooklyn, NY',
+  '',
+  'Russia',
+  '',
+  '',
+];
+
+List<String> caption = [
+  'I can do this all day',
+  'Never missed a shot',
+  'Spy you never knew',
+  'I am IronMan',
+  'Hulk Smash',
+  'God of thunder',
+  'My spider sense is tingling',
+  'Can you see me?',
+  'Higher. Further. Faster.',
+  'I am the scarlet witch',
+  'My fingers can never heal',
+  'Who\'s Bucky?',
+  'Boom! you looking for this.',
+  'Steven was that you?',
+  'I\'m Daredevil. Not even God can stop that now.'
+];
